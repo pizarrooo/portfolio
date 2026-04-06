@@ -18,11 +18,18 @@ header{
     justify-content: center;
     gap: 5rem;
     background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(1px);
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 3rem;
     z-index: 1000;
+}
+.header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
 }
 .logo{
     color: white;
@@ -144,7 +151,7 @@ section{
 }
 .socials{
     display: flex;
-    gap: 2rem;
+    gap: 0.8rem;
 }
 .socials i{
     font-size: 2.5rem;
