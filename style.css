@@ -202,3 +202,56 @@ section{
 .about-box about-me-text{
     font-size: 1rem;
 }
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(219, 219, 219);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, rgb(0, 157, 255), rgb(225, 0, 225));
+    border-radius: 10px;
+}
+
+.certificate-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+}
+.certificate-card{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.certificate-card:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-10px)scale(1.02);
+}
+.certificate-card img{
+    width: 25vw;
+    border-radius: 1rem;
+}
+.certificate-card:hover .btn{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+.certificate-card:hover .btn:hover{
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
+.certificate-card h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
