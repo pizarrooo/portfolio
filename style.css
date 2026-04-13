@@ -176,21 +176,65 @@ section{
 }
 .about-info{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-between;
+    gap: 3rem;
 }
 .about img{
-    width: 24vw;
+    width: 300px;
     border-radius: 2rem;
+    flex-shrink: 0;
 }
 .about-box{
     display: flex;
+    max-width: 600px;
     flex-direction: column;
-    text-align: justify;
-    align-items: right;
+    text-align: center;
+    align-items: center;
     justify-content: center;
     gap: 1.5rem;
+}
+@media (max-width: 768px){
+    .about-info{
+        flex-direction: column;
+    }
+
+    .about-info img{
+        width: 80%;
+    }
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+    width: 100%;
+}
+.grid-card{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.about-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+}
+.grid-card:hover{
+    background-color: white;
+    color: black;
+    transform: translateY(-10px)scale(1.02);
 }
 .about-box span{
     background: linear-gradient(to right, rgb(0, 157, 255), rgb(225, 0, 225));
@@ -199,7 +243,7 @@ section{
     color: transparent;
     font-size: 1rem;
 }
-.about-box about-me-text{
+.about-box p{
     font-size: 1rem;
 }
 ::-webkit-scrollbar{
@@ -228,7 +272,6 @@ section{
     gap: 1.5rem;
     border: 2px solid black;
     border-radius: 3rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
