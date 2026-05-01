@@ -174,7 +174,7 @@ body {
 
 .section-title{
     text-align: center;
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 5vw, 3rem);
     font-weight: 600;
     margin-bottom: 3rem;
 }
@@ -216,7 +216,7 @@ body {
 }
 .grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 
     max-width: 800px;
@@ -264,7 +264,7 @@ body {
 
 .certificate-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     max-width: 800px;
     margin: 0 auto;
@@ -338,27 +338,35 @@ footer {
     color: #00bfff;
 }
 
-@media (max-width: 768px) {
-
-    .header {
-        padding: 10px 15px;
+@media (max-width:768px){
+    .grid
+        {grid-template-columns:1fr;gap:1.2rem
     }
-    .header img {
-        width: 35px;
+    .grid-card
+        {padding:1.5rem 1rem;font-size:.95rem
     }
-    .logo span {
-        font-size: 16px;
+    .about-box
+        {padding:0 1rem
     }
-    .nav-links {
-        gap: 10px;
+    .about-box span
+        {font-size:1.1rem
     }
-    .nav-links li a i {
-        font-size: 18px;
+    .about-box p
+        {font-size:.95rem
     }
-    body {
-        font-size: 15px;
+    .section-title
+        {font-size:2rem;margin-bottom:1.5rem
     }
-    .section-title {
-        font-size: 22px;
+    .certificate-grid
+        {grid-template-columns:1fr;gap:1.5rem
+    }
+    .certificate-card
+        {padding:1.5rem 1rem
+    }
+    .certificate-card h3
+        {font-size:1.2rem
+    }
+    .certificate-card img
+        {max-width:180px
     }
 }
