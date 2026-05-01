@@ -93,6 +93,7 @@ section {
 body {
   min-height: 100vh;
   display: flex;
+  overflow-x: hidden;
   flex-direction: column;
 }
 .home{
@@ -151,7 +152,7 @@ body {
     width: 150px;
     text-align: center;
     text-wrap: nowrap;
-    transition: 0.2 ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .btn:hover{
     background-color: black;
@@ -334,4 +335,42 @@ footer {
 .social-footer a:hover {
     transform: scale(1.2);
     color: #00bfff;
+}
+
+@media (max-width: 768px){
+    header {
+        gap: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    .nav-links {
+        gap: 1rem;
+    }
+    .home {
+        padding: 2rem 1rem;
+    }
+    .home img {
+        width: 180px;
+        height: 180px;
+    }
+    .info-box h1 {
+        font-size: 1.2rem;
+    }
+    .btn {
+        width: 120px;
+        font-size: 0.7rem;
+    }
+    .grid,
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+    .grid-card,
+    .certificate-card {
+        padding: 1.5rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
 }
