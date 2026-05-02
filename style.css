@@ -339,34 +339,61 @@ footer {
 }
 
 @media (max-width:768px){
-    .grid
-        {grid-template-columns:1fr;gap:1.2rem
+    header {
+        width: 95%;
+        gap: 1rem;
+        padding: 0.5rem 1rem;
     }
-    .grid-card
-        {padding:1.5rem 1rem;font-size:.95rem
+
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .about-box
-        {padding:0 1rem
+
+    .logo {
+        font-size: 1rem;
     }
-    .about-box span
-        {font-size:1.1rem
+
+    .visit-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
     }
-    .about-box p
-        {font-size:.95rem
+    .grid {
+        grid-template-columns:1fr;
+        gap:1.2rem;
+        margin-bottom: 50px;
+
     }
-    .section-title
-        {font-size:2rem;margin-bottom:1.5rem
+    .grid-card {
+        padding:1.5rem 1rem;
+        font-size:.95rem
     }
-    .certificate-grid
-        {grid-template-columns:1fr;gap:1.5rem
+    .about-box {
+        padding:0 1rem
     }
-    .certificate-card
-        {padding:1.5rem 1rem
+    .about-box span {
+        font-size:1.1rem
     }
-    .certificate-card h3
-        {font-size:1.2rem
+    .about-box p {
+        font-size:.95rem
     }
-    .certificate-card img
-        {max-width:180px
+    .section-title {
+        font-size:2rem;
+        margin-bottom:1.5rem
+    }
+    .certificate-grid {
+        grid-template-columns:1fr;
+        gap:1.5rem;
+        margin-bottom: 50px;
+    }
+    .certificate-card {
+        padding:1.5rem 1rem
+    }
+    .certificate-card h3 {
+        font-size:1.2rem
+    }
+    .certificate-card img {
+        max-width:180px
     }
 }
