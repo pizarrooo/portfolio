@@ -269,6 +269,42 @@ li a:hover::before{
     }
 }
 
+/* ====== TECH STACK PAGE ====== */
+.tech-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; 
+    margin: 10px;
+    height: 120px;
+    text-align: center;
+    gap: 8px;
+    height: 140px;
+}
+.tech-main img {
+    width: 60px;
+    height:60px;
+    object-fit: contain;
+}
+.tech-img {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 100px; 
+    gap: 30px;
+    margin: 20px;
+    padding: 20px;
+}
+.tech-main h2 {
+    font-size: 0.9rem;
+}
+/* ====== TECH STACK TABLET SCREEN ====== */
+@media (max-width: 768px) {
+    .tech-img {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* ====== CERTIFICATE PAGE ====== */
 .certificate-grid{
     display: grid;
