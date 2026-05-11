@@ -90,27 +90,47 @@ li a::before{
 li a:hover::before{
     width: 100%;
 }
+.menu-toggle{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
 
 @media screen and (max-width: 768px){
-    header {
-        width: 95%;
-        gap: 1rem;
-        padding: 0.5rem 1rem;
+
+    .menu-toggle{
+        display: block;
     }
-    .nav-links {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .logo {
-        font-size: 1rem;
-    }
-    .section-title {
-        font-size:2rem;
-        margin-bottom:1.5rem
-    }
-    li a span{
+
+    .nav-links{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 220px;
+
+        background: rgba(0,0,0,0.95);
+        backdrop-filter: blur(10px);
+
+        border-radius: 1rem;
+        padding: 1rem;
+
         display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    li a span{
+        display: inline;
+    }
+
+    header{
+        justify-content: space-between;
     }
 }
 
